@@ -1,0 +1,48 @@
+.country-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.country-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 500px;
+  overflow-y: auto;
+}
+
+.country-item {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.country-item:hover {
+  background-color: #007bff;
+}
+
+.country-item.selected {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.message {
+  font-size: 16px;
+  color: #888;
+}
+
+@media screen and (max-width: 768px) {
+  .country-item {
+    font-size: 14px;
+  }
+}
